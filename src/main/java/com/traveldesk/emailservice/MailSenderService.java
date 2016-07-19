@@ -195,7 +195,7 @@ public class MailSenderService {
 
 					logger.debug(mail.toString());
 
-					sendMail.sendMail(mail);
+					//sendMail.sendMail(mail);
 
 				} else {
 					logger.error("Trigger name or email is null");

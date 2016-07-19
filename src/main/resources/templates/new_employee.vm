@@ -80,17 +80,15 @@ MailBody:
 						<td>Purpose of Travel</td>
 						<td>Client Name</td>
 					</tr>
-					#foreach($details in $otherDetails)
 					<tr align="center">
-						<td>$details.getEmployeeName()</td>
-						<td>$details.getEmployeeId()</td>
-						<td>$details.getApprovingManager()</td>
-						<td>$details.getContactNumber()</td>
-						<td>$details.getEmailId()</td>
-						<td>$details.getPurpose()</td>
-						<td>$details.getClientName()</td>
+						<td>$otherDetails.getName()</td>
+						<td>$otherDetails.getId()</td>
+						<td>$otherDetails.getApprovingManager()</td>
+						<td>$otherDetails.getContactNumber()</td>
+						<td>$otherDetails.getEmailId()</td>
+						<td>$otherDetails.getPurposeOfTravel()</td>
+						<td>$otherDetails.getClientName()</td>
 					</tr>
-					#end
 				</table>
 			</td>
 		</tr>

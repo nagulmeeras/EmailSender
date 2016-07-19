@@ -64,4 +64,13 @@ public class Employee {
 	public void setClientName(String clientName) {
 		this.clientName = clientName;
 	}
+
+	@Override
+	public String toString() {
+		return "Employee [name=" + name + ", id=" + id + ", approvingManager=" + approvingManager + ", contactNumber="
+				+ contactNumber + ", emailId=" + emailId + ", purposeOfTravel=" + purposeOfTravel + ", clientName="
+				+ clientName + "]";
+	}
+	
+	
 }

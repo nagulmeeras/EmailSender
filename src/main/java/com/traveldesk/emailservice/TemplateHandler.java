@@ -45,6 +45,9 @@ public class TemplateHandler {
 
 		velocityContext.put("tripsDetails", travelInfo.getTrips());
 		velocityContext.put("travellersDetails", travelInfo.getTravellers());
+		
+		logger.debug(travelInfo.getEmployee().toString());
+		
 		velocityContext.put("otherDetails", travelInfo.getEmployee());
 		velocityContext.put("facilities", travelInfo.getFacilites());
 

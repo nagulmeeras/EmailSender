@@ -66,6 +66,8 @@ public class DataParser {
 		employee.setContactNumber("afasfasfas");
 		employee.setId("12603");
 		employee.setEmailId("sknagulmeera06@gmail.com");
+		employee.setClientName("Gallagher");
+		employee.setPurposeOfTravel("Vocation");
 
 		Facilities facilities = new Facilities();
 		facilities.setHotel(true);
@@ -77,7 +79,7 @@ public class DataParser {
 
 		List<Facilities> facilitiesList = new ArrayList<Facilities>();
 		facilitiesList.add(facilities);
-		
+
 		travelInfo.setTravellers(travellersDetails);
 		travelInfo.setTrips(trips);
 		travelInfo.setEmployee(employee);
