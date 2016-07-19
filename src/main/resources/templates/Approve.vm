@@ -1,5 +1,5 @@
 MailSubject:
-	Travel Request (ID: $requestId) from <b>$workLocation</b> has been Approved.
+	Travel Request (ID: $requestId) from $workLocation has been Approved.
 MailBody:
 <html>
 <head>

@@ -1,5 +1,5 @@
 MailSubject:
-A New Travel Request (ID: $requestId) from <b>$workLocation</b> has been raised
+A New Travel Request (ID: $requestId) from $workLocation has been raised
 MailBody:
 <html>
 <head>
