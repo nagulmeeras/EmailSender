@@ -1,0 +1,112 @@
+MailSubject:
+A New Travel Request (ID: $requestId) from <b>$workLocation</b> has been raised
+MailBody:
+<html>
+<head>
+</head>
+<body>
+	<table cellspacing="20">
+		<tr>
+			<td>Hi,</td>
+		</tr>
+		<tr>
+			<td>The Request bearing <b>Request ID: $requestId</b> has been
+				raised for <b>Employee:$employeeName from $workLocation</b>.
+			</td>
+		</tr>
+		<tr>
+			<td>Trip Details:</td>
+		</tr>
+		<tr>
+			<td>
+				<table border="1px" cellpadding="0" cellspacing="0">
+					<tr align="center">
+						<td>Trip Type</td>
+						<td>From</td>
+						<td>To</td>
+						<td>Date of Journey</td>
+						<td>Prferred Time of Journey</td>
+					</tr>
+					#foreach($tripDetails in $tripsDetails)
+					<tr align="center">
+						<td>$tripDetails.getType()</td>
+						<td>$tripDetails.getFrom()</td>
+						<td>$tripDetails.getTo()</td>
+						<td>$tripDetails.getDateOfJourney()</td>
+						<td>$tripDetails.getPreferredTime()</td>
+					</tr>
+					#end
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>Traveller's Info:</td>
+		</tr>
+		<tr>
+			<td>
+				<table border="1px" cellpadding="0" cellspacing="0">
+					<tr align="center">
+						<td>Travelers Name</td>
+						<td>Gender</td>
+						<td>DOB</td>
+						<td>Relationship</td>
+						<td>Meal Preference</td>
+					</tr>
+					#foreach($traveller in $travellersDetails)
+					<tr align="center">
+						<td>$traveller.getName()</td>
+						<td>$traveller.getGender()</td>
+						<td>$traveller.getdOB()</td>
+						<td>$traveller.getRelationship()</td>
+						<td>$traveller.getMealPreference()</td>
+					</tr>
+					#end
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>Other details:</td>
+		</tr>
+		<tr>
+			<td>
+				<table border="1px" cellpadding="0" cellspacing="0">
+					<tr align="center">
+						<td>Employee Name</td>
+						<td>Employee ID</td>
+						<td>Approving Manager</td>
+						<td>Contact Number</td>
+						<td>Email ID</td>
+						<td>Purpose of Travel</td>
+						<td>Client Name</td>
+					</tr>
+					#foreach($details in $otherDetails)
+					<tr align="center">
+						<td>$details.getEmployeeName()</td>
+						<td>$details.getEmployeeId()</td>
+						<td>$details.getApprovingManager()</td>
+						<td>$details.getContactNumber()</td>
+						<td>$details.getEmailId()</td>
+						<td>$details.getPurpose()</td>
+						<td>$details.getClientName()</td>
+					</tr>
+					#end
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<b>Note to Booking Agent:</b> The request is still pending approval. Please DO NOT book any tickets for this request.
+		</td>
+		</tr>
+		<tr>
+			<td>Please <a>Click Here</a> to open the Travel Desk app Corridor. </td>
+		</tr>
+		<tr>
+			<td>Thank you</td>
+		</tr>
+		<tr>
+			<td>This is a system-generated email. Please do not respond to this email.</td>
+		</tr>
+	</table>
+</body>
+</html>

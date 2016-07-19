@@ -1,0 +1,27 @@
+MailSubject:
+Travel Request (ID: $requestId) is Pending Reimbursement
+MailBody:
+<html>
+<head>
+</head>
+<body>
+	<table cellspacing="20">
+		<tr>
+			<td>Hi,</td>
+		</tr>
+		<tr>
+			<td>The Request bearing <b>Request ID: $requestId</b> is Pending Reimbursement, please submit all the travel expense bills to the Travel Desk at the earliest.
+			</td>
+		</tr>
+		<tr>
+			<td>Please <a>Click Here</a> to open the Travel Desk app Corridor. </td>
+		</tr>
+		<tr>
+			<td>Thank you</td>
+		</tr>
+		<tr>
+			<td>This is a system-generated email. Please do not respond to this email.</td>
+		</tr>
+	</table>
+</body>
+</html>
